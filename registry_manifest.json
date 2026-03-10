@@ -1,0 +1,22 @@
+{
+  "engine_metadata": {
+    "version": "1.0.4",
+    "package": "com.zen.lyno",
+    "environment": "OpenJDK-21"
+  },
+  "component_registry": {
+    "GLASS_CARD": "ui.components.GlassCardComponent",
+    "NEU_BUTTON": "ui.components.NeumorphicButton",
+    "ERP_CHART": "ui.charts.DashboardChart",
+    "DYNAMIC_LIST": "ui.components.ObjectBoxList"
+  },
+  "viewmodel_registry": {
+    "MAIN_VM": "viewmodel.AppViewModel",
+    "AUTH_VM": "viewmodel.AuthViewModel",
+    "SYNC_VM": "viewmodel.SyncViewModel"
+  },
+  "data_adapters": {
+    "local": "ObjectBox_v4",
+    "remote": "Firestore_v33"
+  }
+}
