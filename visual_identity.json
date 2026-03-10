@@ -1,10 +1,10 @@
 {
   "theme": {
     "colors": {
-      "primary_glow": "#00E5FF",
-      "glass_bg": "rgba(255, 255, 255, 0.12)",
-      "glass_border": "#33FFFFFF",
-      "surface": "#0A0A0A"
+      "primary_glow": "#FF2D55",
+      "glass_bg": "rgba(255, 45, 85, 0.15)",
+      "glass_border": "rgba(255, 45, 85, 0.35)",
+      "surface": "#0B0003"
     },
     "effects": {
       "glass_blur": 25,
@@ -16,8 +16,7 @@
       "chart_entry": "BOUNCE",
       "duration_ms": 450
     }
-  },
-  "layout_engine": {
+  },"layout_engine": {
     "dashboard": [
       { "view": "GLASS_CARD", "id": "total_sales", "weight": 1 },
       { "view": "ERP_CHART", "id": "revenue_graph", "weight": 2 },
