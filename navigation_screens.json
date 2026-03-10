@@ -1,0 +1,15 @@
+{
+  "navigation": {
+    "root_route": "dashboard",
+    "routes": [
+      { "id": "dashboard", "type": "GRID", "title": "Overview" },
+      { "id": "inventory", "type": "LIST", "title": "ERP Inventory" },
+      { "id": "settings", "type": "FORM", "title": "User Profile" }
+    ],
+    "bottom_nav": [
+      { "label": "Home", "icon": "feather_home", "target": "dashboard" },
+      { "label": "Stock", "icon": "feather_package", "target": "inventory" },
+      { "label": "User", "icon": "feather_user", "target": "settings" }
+    ]
+  }
+}
