@@ -1,0 +1,24 @@
+{
+  "workflows": {
+    "REFRESH_DATA": {
+      "conditions": ["NETWORK_CONNECTED", "USER_AUTHENTICATED"],
+      "steps": [
+        { "exec": "SHOW_LOADER", "param": "Syncing..." },
+        { "exec": "FETCH_FIRESTORE", "collection": "erp_stats" },
+        { "exec": "SAVE_OBJECTBOX", "entity": "SaleRecord" },
+        { "exec": "HIDE_LOADER" }
+      ],
+      "on_failure": { "exec": "SHOW_TOAST", "message": "Offline Mode Enabled" }
+    },
+    "EXPORT_PDF": {
+      "steps": [
+        { "exec": "GENERATE_FILE", "format": "PDF" },
+        { "exec": "OPEN_SHARE_SHEET" }
+      ]
+    }
+  },
+  "constraints": {
+    "min_api_level": 24,
+    "require_biometric": false
+  }
+}
